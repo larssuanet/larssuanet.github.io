@@ -10,7 +10,7 @@ $( function() {
 	$('.countdown.styled').countdown({
 	  date: endDate,
 	  render: function(data) {
-		$(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>DAYS</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>HOURS</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>MINUTES</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
+		$(this.el).html("<div>" + this.leadingZeros(data.days, 2) + " <span>DAYS</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>HOURS</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>MINUTES</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
 	  }
 	});
 	$('.countdown.callback').countdown({
